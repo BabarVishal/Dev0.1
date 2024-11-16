@@ -16,7 +16,7 @@ for(let i = 0; i < 10; i++){
     console.log(ans);
 }
 
-//Write a program print all the even number in an array;
+// Write a program print all the even number in an array;
 const ages = [21, 22, 23, 24, 25, 26];
 const numberOfPeople = ages.length;
 
@@ -53,3 +53,35 @@ for(let i = 0; i < allUser.length; i++){
     }
 }
 
+
+//Day2
+
+function sum(a,b){
+    return a + b;
+}
+
+
+let add = sum(2,2);
+console.log(add);
+
+
+
+let sum = 0;
+
+for(let i = 0; i < 10; i++){
+  sum = sum + i;
+}
+
+console.log(sum);
+
+
+function summ(num1, num2, fnToCall){
+    let result = num1 + num2;
+   fnToCall(result);
+}
+
+function displayResult(data){
+    console.log("result of the sum is :" + data);
+}
+
+const anss = summ(2, 2, displayResult) 
